@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>StashEngine</title>
+    <%= stylesheet_link_tag    "stash_engine/application", media: "all" %>
+    <%= javascript_include_tag "stash_engine/application" %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <div class="container">
+      <%= image_tag("stash_logo.png", alt: "Responsive image") %>
+      <div class="btn pull-right" >
+        <a href="#">LogIn</a>
+      </div>
+    </div>
+    <div class="container">
+      <%= render 'layouts/header' %>
+      <%= yield %>
+    </div>
+    <br/>
+    <%= render 'layouts/footer' %>
+  </body>
+</html>
