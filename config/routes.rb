@@ -10,4 +10,5 @@ StashEngine::Engine.routes.draw do
   resources :resources
 
   resources :file_uploads
+
 end
