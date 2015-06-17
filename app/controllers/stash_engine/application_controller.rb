@@ -1,4 +1,2 @@
-module StashEngine
-  class ApplicationController < ActionController::Base
-  end
+class StashEngine::ApplicationController < ApplicationController
 end

@@ -2,8 +2,20 @@ require 'test_helper'
 
 module StashEngine
   class StaticPagesControllerTest < ActionController::TestCase
-    # test "the truth" do
-    #   assert true
-    # end
+    test "should get home" do
+      get :home
+      assert_response :success
+    end
+
+    test "should get about" do
+      get :about
+      assert_response :success
+    end
+
+    test "should get contact" do
+      get :contact
+      assert_response :success
+    end
+
   end
 end
