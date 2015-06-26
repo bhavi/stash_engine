@@ -1,12 +1,12 @@
 StashEngine::Engine.routes.draw do
 
-  root to: 'static_pages#home'
+  root to: "static_pages#home"
 
   get 'static_pages/home'
 
-  get 'static_pages/about'
+  get 'dashboard/show'
 
-  get 'static_pages/contact'
+  get 'dashboard/home'
 
   resources :institutions
 
