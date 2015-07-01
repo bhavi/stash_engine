@@ -1,16 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" class="no-js">
 <head>
-  <title>StashEngine</title>
-  <%= stylesheet_link_tag    "stash_engine/application", media: "all" %>
-  <%= javascript_include_tag "stash_engine/application" %>
-  <%= stylesheet_link_tag "scaffold" %>
-  <%= csrf_meta_tags %>
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- Mobile viewport optimization h5bp.com/ad -->
+<meta name="HandheldFriendly" content="True">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<!-- Internet Explorer use the highest version available -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- Mobile IE allows us to activate ClearType technology for smoothing fonts for easy reading -->
+<!--[if IEMobile]>
+<meta http-equiv="cleartype" content="on">
+<![endif]-->
+<title><%= render_page_title %></title>
+<%= favicon_link_tag 'favicon.ico' %>
+<%= stylesheet_link_tag    "stash_engine/application", media: "all" %>
+<%= javascript_include_tag "stash_engine/application" %>
+<%= stylesheet_link_tag "scaffold" %>
+<%= csrf_meta_tags %>
 </head>
 <body>
-
-  <%= render 'layouts/stash_engine/header' %>
+<div class="container">
+  <%= render :partial => 'layouts/stash_engine/header' %>
+  <%= render :partial=>'/flash_msg', layout: 'shared/flash_messages' %>
+  <div class="row">
   <%= yield %>
+  </div>
   <%= render 'layouts/stash_engine/footer' %>
+</div>
 </body>
 </html>
