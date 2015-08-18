@@ -9,9 +9,9 @@ Gem::Specification.new do |s|
   s.version     = StashEngine::VERSION
   s.authors     = ["bhavi.vedula"]
   s.email       = ["bhavi13may@gmail.com"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of StashEngine."
-  s.description = "TODO: Description of StashEngine."
+  s.homepage    = "https://github.com/bhavi/stash_engine"
+  s.summary     = "Summary of StashEngine."
+  s.description = "Description of StashEngine."
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
